@@ -6,6 +6,7 @@ import { Education } from "@/components/sections/education";
 import { Harvestflow } from "@/components/sections/harvestflow";
 import { Achievements } from "@/components/sections/achievements";
 import { Skills } from "@/components/sections/skills";
+import { EntropyShowcase } from "@/components/sections/entropy-showcase";
 import { Contact } from "@/components/sections/contact";
 
 export default function HomePage() {
@@ -18,6 +19,7 @@ export default function HomePage() {
       <Harvestflow />
       <Achievements />
       <Skills />
+      <EntropyShowcase />
       <Contact />
       <FloatingCvButton />
     </main>

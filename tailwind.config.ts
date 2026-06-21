@@ -5,8 +5,9 @@ const config: Config = {
   presets: [createPreset()],
   darkMode: "class",
   content: [
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{ts,tsx,mdx}",
-    "./components/**/*.{ts,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./content/**/*.{md,mdx}",
     "./node_modules/fumadocs-ui/dist/**/*.js",
   ],
@@ -24,6 +25,8 @@ const config: Config = {
           strong: "rgba(148, 163, 184, 0.22)",
         },
         foreground: "#E7ECF6",
+        primary: "var(--text-primary)",
+        secondary: "var(--text-secondary)",
         muted: "#7C8AA8",
         electric: {
           DEFAULT: "#3D7FFF",
@@ -39,7 +42,7 @@ const config: Config = {
       },
       fontFamily: {
         display: ["var(--font-sora)", "sans-serif"],
-        sans: ["var(--font-inter)", "sans-serif"],
+        sans: ["var(--font-noto)", "var(--font-inter)", "sans-serif"],
         mono: ["var(--font-mono)", "monospace"],
       },
       backgroundImage: {
